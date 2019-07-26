@@ -1,0 +1,16 @@
+occupancy rate = 1.0
+moving object rate = 0.0
+moving object velocity = 0.0 ~ 0.0
+
+stage,success rate
+0,0.15
+1,0.38
+2,0.52
+3,0.47
+4,0.75
+5,0.56
+6,0.64
+7,0.66
+8,0.82
+9,0.75
+10,0.78
