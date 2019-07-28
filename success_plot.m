@@ -132,3 +132,8 @@ ax2.YLabel.String = 'Learning Rate';
 ax2.YLabel.Color = 'k';
 ax2.XLim = [0, 2200];
 line(step, lr, 'Linewidth', 2, 'Color', 'b', 'Parent', ax2)
+
+%% trajectory
+tcn_t1 = readtable('aetcn-traj.csv');
+
+plot(tcn_t1.Var1, tcn_t1.Var2, 'b')
