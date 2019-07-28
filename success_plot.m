@@ -30,7 +30,7 @@ title('Success Rate in Occupancy Rate = 1')
 xlabel('Curriculum Stage')
 ylabel('Goal/(100 trial)')
 ylim([0, 1.0])
-legend('CNN policy', 'LSTM policy', 'TCN policy (2 TCN layer)', 'location', 'southoutside')
+legend('CNN policy', 'LSTM policy', 'TCN policy (1 TCN layer)', 'TCN policy (2 TCN layer)', 'location', 'southoutside')
 
 %% learning curve
 
@@ -71,7 +71,7 @@ figure('Position',[0 0 800 600])
 plot(cnn_step, cnn_eprew, 'r', 'Linewidth', 2)
 hold on
 plot(lstm_step, lstm_eprew, 'g', 'Linewidth', 2)
-plot(tcn_step1, tcn_eprew1, 'b', 'Linewidth', 2)
+plot(tcn_step1, tcn_eprew1, 'c', 'Linewidth', 2)
 plot(tcn_step2, tcn_eprew2, 'b', 'Linewidth', 2)
 hold off
 ax1 = gca;  % current axes
@@ -81,7 +81,7 @@ title('Episode Mean Reward')
 xlim([0, 2200])
 xlabel('Iteration')
 ylabel('Episode Mean Reward')
-legend('CNN policy', 'LSTM policy', 'TCN policy (2 TCN layer)', 'location', 'southoutside')
+legend('CNN policy', 'LSTM policy', 'TCN policy (1 TCN layer)', 'TCN policy (2 TCN layer)', 'location', 'southoutside')
 
 %% Occupancy 
 
