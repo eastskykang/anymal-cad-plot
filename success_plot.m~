@@ -207,19 +207,15 @@ for i = 1:100:T
 end
 
 % boundary 
-fill([-3, 27, 27, -3], [6, 6, 10, 10], 'k', 'LineStyle', 'none')
-fill([-3, 27, 27, -3], [-6, -6, -10, -10], 'k', 'LineStyle', 'none')
-fill([-5, -2, -2, -5], [7, 7, -7, -7], 'k', 'LineStyle', 'none')
-fill([26, 29, 29, 26], [7, 7, -7, -7], 'k', 'LineStyle', 'none')
+fill([-3, 27, 27, -3], [6, 6, 10, 10], 'k')
+fill([-3, 27, 27, -3], [-6, -6, -10, -10], 'k')
+fill([-4, -2, -2, -4], [6, 6, -6, -6], 'k')
+fill([26, 28, 28, 26], [6, 6, -6, -6], 'k')
 
-h = fill([-2, 26, 26, -2], [6, 6, 5.5, 5.5], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-h = fill([-2, 26, 26, -2], [-6, -6, -5.5, -5.5], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-h = fill([-2, -1.5, -1.5, -2], [6, 6, -6, -6], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-h = fill([25.5, 26, 26, 25.5], [6, 6, -6, -6], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
+fill([-3, 27, 27, -3], [6, 6, 10, 10], 'k')
+fill([-3, 27, 27, -3], [-6, -6, -10, -10], 'k')
+fill([-4, -2, -2, -4], [6, 6, -6, -6], 'k')
+fill([26, 28, 28, 26], [6, 6, -6, -6], 'k')
 
 hold off
 xlim([-3, 27])
@@ -264,25 +260,14 @@ for i = 1:100:T
     drawanymal(robotx(i), roboty(i), eulZYX(1), 0.5);
 end
 
-fill([-3, 27, 27, -3], [6, 6, 10, 10], 'k', 'LineStyle', 'none')
-fill([-3, 27, 27, -3], [-6, -6, -10, -10], 'k', 'LineStyle', 'none')
-fill([-5, -2, -2, -5], [7, 7, -7, -7], 'k', 'LineStyle', 'none')
-fill([26, 29, 29, 26], [7, 7, -7, -7], 'k', 'LineStyle', 'none')
-
-h = fill([-2, 26, 26, -2], [6, 6, 5.5, 5.5], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-h = fill([-2, 26, 26, -2], [-6, -6, -5.5, -5.5], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-h = fill([-2, -1.5, -1.5, -2], [6, 6, -6, -6], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-h = fill([25.5, 26, 26, 25.5], [6, 6, -6, -6], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-
+% boundary 
+% fill([-2, 18, 18, -2], [6, 6, 10, 10], 'k')
+% fill([-2, 18, 18, -2], [-6, -6, -10, -10], 'k')
 
 hold off
-xlim([-3, 27])
-ylim([-7, 7])
-pbaspect([30 14 1])
+xlim([-2, 26])
+ylim([-6, 6])
+pbaspect([28 12 1])
 title('LSTM Trajectory')
 
 %% CNN trajectory 
@@ -321,24 +306,14 @@ for i = 1:100:T
     drawanymal(robotx(i), roboty(i), eulZYX(1), 0.5);
 end
 
-fill([-3, 27, 27, -3], [6, 6, 10, 10], 'k', 'LineStyle', 'none')
-fill([-3, 27, 27, -3], [-6, -6, -10, -10], 'k', 'LineStyle', 'none')
-fill([-5, -2, -2, -5], [7, 7, -7, -7], 'k', 'LineStyle', 'none')
-fill([26, 29, 29, 26], [7, 7, -7, -7], 'k', 'LineStyle', 'none')
-
-h = fill([-2, 26, 26, -2], [6, 6, 5.5, 5.5], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-h = fill([-2, 26, 26, -2], [-6, -6, -5.5, -5.5], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-h = fill([-2, -1.5, -1.5, -2], [6, 6, -6, -6], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
-h = fill([25.5, 26, 26, 25.5], [6, 6, -6, -6], 'r', 'LineStyle', 'none');
-h.FaceAlpha = 0.5;
+% boundary 
+% fill([-2, 18, 18, -2], [6, 6, 10, 10], 'k')
+% fill([-2, 18, 18, -2], [-6, -6, -10, -10], 'k')
 
 hold off
-xlim([-3, 27])
-ylim([-7, 7])
-pbaspect([30 14 1])
+xlim([-2, 26])
+ylim([-6, 6])
+pbaspect([28 12 1])
 title('CNN Trajectory')
 
 function drawfilledcircle(xc, yc, r, alp, color)
